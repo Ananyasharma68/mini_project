@@ -1,0 +1,422 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #f9f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== HEADER & NAVBAR ===== */
+header {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  margin: 5px 0;
+  font-size: 1.6rem;
+}
+
+nav {
+  margin-top: 8px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #ffdf5d;
+}
+
+nav a.active {
+  text-decoration: underline;
+  color: #ffdf5d;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  filter: brightness(75%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 90%;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero-text p {
+  color: #ddd;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffd633;
+  transform: scale(1.05);
+}
+
+/* ===== LOGIN FORM ===== */
+.login form {
+  background: white;
+  max-width: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button,
+.btn {
+  cursor: pointer;
+}
+
+/* ===== EVENT CARDS ===== */
+.events {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 10px;
+  gap: 20px;
+}
+
+.event-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.event-card h3 {
+  margin: 10px 0 5px;
+  color: #004aad;
+}
+
+/* ===== ABOUT PAGE ===== */
+.about {
+  text-align: center;
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-img {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact form {
+  background: white;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== REGISTERED PAGE ===== */
+.registered {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* ===== FEATURES SECTION (HOME PAGE) ===== */
+.features {
+  padding: 60px 20px;
+  background: #f7f8fc;
+  text-align: center;
+}
+
+.features h2 {
+  color: #004aad;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.feature-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.feature-card h3 {
+  color: #004aad;
+  margin: 15px 0 10px;
+  font-size: 1.2rem;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  padding: 0 15px 20px;
+  color: #555;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* 📱 Tablet & Mobile (Below 768px) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 6px;
+    font-size: 0.9rem;
+  }
+
+  .hero img {
+    height: 350px;
+  }
+
+  .hero-text {
+    width: 90%;
+  }
+
+  .hero-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .events {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event-card,
+  .feature-card {
+    width: 85%;
+  }
+
+  .login form, 
+  .contact form {
+    width: 90%;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+}
+
+/* 📱 Small Phones (Below 480px) */
+@media (max-width: 480px) {
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+body {
+    background-color: #e8f5e9;  /* Light green background */
+    color: #1b5e20;  /* Dark green text */
+}
+
+header {
+    background-color: #43a047;  /* Medium green header */
+    color: white;
+}
+
+.hero {
+    background-color: #81c784;  /* Light medium green hero section */
+}
+
+.feature-card {
+    background-color: #c8e6c9;  /* Very light green cards */
+    border: 1px solid #2e7d32;
+}
+
+.btn {
+    background-color: #2e7d32;  /* Dark green button */
+    color: white;
+}
+
+footer {
+    background-color: #43a047;  /* Medium green footer */
+    color: white;
+}
+
+a {
+    color: #1b5e20;  /* Dark green links */
+}
+
+header nav a.active {
+    background-color: #2e7d32;  /* Dark green for active nav link */
+    color: white;
+}
+body {
+    background-color: #f0f5ff;  /* Light blue background */
+}
+
+header {
+    background-color: #1a4ba7;  /* Dark blue header */
+    color: white;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    color: #a8c7ff;
+}
+
+nav a.active {
+    border-bottom: 2px solid #a8c7ff;
+}
+
+.hero-text {
+    background-color: rgba(26, 75, 167, 0.8);  /* Semi-transparent blue */
+    color: white;
+    padding: 2rem;
+}
+
+.features {
+    background-color: #e6f0ff;  /* Very light blue */
+}
+
+.feature-card {
+    background-color: white;
+    border: 1px solid #1a4ba7;
+}
+
+footer {
+    background-color: #1a4ba7;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn {
+    background-color: #1a4ba7;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0d2b66;
+}
